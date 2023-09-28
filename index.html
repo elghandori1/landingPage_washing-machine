@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MG code</title>
+  <link rel="icon" type="image/png" href="logo/codingMGV2-01.jpg">
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    
+  <!-- font Arabic link: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg_gradient container">
+
+  <div class="d-flex justify-content-center col-12 ">
+
+    <div id="customAlert" class="modal">
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <div class="modal-header">
+            <div class="fw-bold modal-title Almarai_font">رسالة</div>
+            <button class="modal-button Almarai_font" onclick="fermerMessage()">إغلاق</button>
+          </div>
+          <div class="modal-text Almarai_font">
+            تم ملئ إستمارتكم بنجاح
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card text-bg-primary my-2 shadow col-12 col-sm-6 bg-light" id="bgtheme">
+
+      <div class="card-header text-center text-dark Almarai_font" id="text_theme">عرض خاص! اشترِ الآن وأحصل على خصم
+        20٪ مع التوصيل المجاني</div>
+
+      <div class="container text-light shadow  rounded bg-primary  d-flex justify-content-between align-items-center p-2 mt-2">
+        <div>Votre Logo</div>
+
+        <a href="#demande" class="text-light fw-bold Almarai_font">للطلب المنتج</a>
+        <div>
+          <label class="switch">
+            <input type="checkbox" id="themeSwitch" onchange="toggleTheme()" />
+              <span class="slider"></span>
+          </label>
+        </div>
+
+      </div>
+
+      <div class="d-flex justify-content-center mt-3">
+        <h3 class="text-light shadow  rounded p-2 titre_sm"
+          style="font-family: 'Almarai', sans-serif;background-color: rgb(7,0,122);">ألة الغسيل الأكثر طلب جات تالبين
+          يديك</h3>
+      </div>
+
+      <div class="container d-flex justify-content-center mt-1">
+        <img id="imgprincipale" src="imagesProduit/machianeAlavie.jpg" class="rounded shadow" alt="Rafraîchissez la page ):" onclick="changerImage('imagesProduit/machianeAlavie.jpg')">
+      </div>
+
+
+      <div class="container mt-2">
+        <div class="text-center mb-2 bg-danger rounded p-1 text-light Almarai_font">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+          </svg>
+          إضغط على إحدى الصور أسفله لتظهر بوضوح</div>
+
+          <div class="row">
+            <div class="col-sm">
+                <img src="imagesProduit/2911178-2.jpg" alt="image1" id="img1" class="img-fluid pointer rounded shadow" onclick="changerImage(this)">
+            </div>
+            <div class="col-sm">
+                <img src="imagesProduit/2911178-3.jpg" alt="image2" id="img2" class="img-fluid pointer rounded shadow" onclick="changerImage(this)">
+            </div>
+            <div class="col-sm">
+                <img src="imagesProduit/2911178-4.jpg" alt="image3" id="img3" class="img-fluid pointer rounded shadow" onclick="changerImage(this)">
+            </div>
+            <div class="col-sm">
+                <img src="imagesProduit/2911179-5.jpg" alt="image4" id="img4" class="img-fluid pointer rounded shadow" onclick="changerImage(this)">
+            </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-3">
+        <h3 class="text-light shadow  rounded  p-2" style="font-family: 'Almarai', sans-serif; background-color: rgb(7,0,122);">مميزات منتجنا</h3>
+      </div>
+
+      <div class="container mt-2">
+        <div class="card text-end Almarai_font" id="infos">
+          <div class="card-header pointer-infos">تنظيف الملابس في غمضة عين</div>
+          <div class="card-header pointer-infos">نظافة متألقة، ملابس لا تشوه بها</div>
+          <div class="card-header pointer-infos">اغسل بشكل أسرع، ووفر الوقت والطاقة</div>
+          <div class="card-header pointer-infos">غسالة موثوقة وفعالة</div>
+      </div>
+  
+    </div>
+
+    <div class="d-flex justify-content-center mt-3">
+      <h3 id="demande" class="text-light shadow text-center rounded p-2 col-11" style="font-family: 'Almarai', sans-serif;background-color: rgb(7,0,122);">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/>
+        </svg>
+        للطلب المنتج</h3>
+      
+    </div>
+
+    <div class="container card col-11 p-2 mx-auto my-2" id="form">
+      <form id="contact-form" action="" method="post">
+        <div class="row my-2">
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label Almarai_font" for="lastname">الإسم العائلي</label>
+            
+              <input type="text" id="firstname" name="firstname" class="form-control" />
+           
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label Almarai_font" for="firstname"> الإسم الشخصي</label>
+              <input type="text" id="lastname" name="lastname" class="form-control" />
+       
+            </div>
+          </div>
+        </div>
+      
+        <!-- Email input -->
+        <div class="form-outline mb-2">
+          <label class="form-label Almarai_font" for="phone">الهاتف</label>
+          <input type="number" id="phone" name="phone" class="form-control" />
+      
+        </div>
+      
+        <!-- ville input -->
+        <div class="form-outline">
+          <label class="form-label Almarai_font" for="city">المدينة</label>
+          <input type="text" id="city" name="city" class="form-control" />
+       
+        </div>
+
+        <div class="form-outline gap-2 d-flex justify-content-start align-items-center my-2">
+            <button type="button" class="btn btn-light quantity-btn" onclick="decrementQuantity()">-</button>
+            <input readonly type="number" value="1" name="quantity" id="quantity" class="col-1 rounded border  border-primary text-center" />
+            <button type="button" class="btn btn-light quantity-btn" onclick="incrementQuantity()">+</button>
+            <label for="quantity" class="mr-2 Almarai_font">الكمية</label>
+        </div>
+      
+        
+        <!-- date -->
+
+        <input type="hidden" id="date" name="date" />
+
+        <!-- Submit button -->
+        <div class="d-flex justify-content-center align-items-center col-12">
+          <button  type="submit" class="btn btn-primary btn-block mb-2 Almarai_font col-6" id="btn_confirm">تأكيد الطلب</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container justify-content-center d-flex align-items-center d-none" id="divAlert">
+      <div class="alert alert-danger gap-2 col-11" role="alert" onclick="cacherDiv()">
+        <div id="msg_validation">
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2 d-flex justify-content-around col-12">
+      <div class="card rounded shadow col-3 d-flex justify-content-center align-items-center p-3 animationIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-credit-card-fill " viewBox="0 0 16 16">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"/>
+        </svg>
+        <div class="text-center mt-1 Almarai_font">الدفع عند الإستلام</div>
+      </div>
+  
+      <div class="card rounded shadow col-3 d-flex justify-content-center align-items-center p-3 animationIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-truck " viewBox="0 0 16 16">
+          <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>
+        <div class="text-center mt-1 Almarai_font">التوصيل بالمجان</div>
+      </div>
+  
+      <div class="card rounded shadow col-3 d-flex justify-content-center align-items-center p-3 animationIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048 .625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+        </svg>
+        <div class="text-center mt-1 Almarai_font">الضمان و المصداقية</div>
+      </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center mt-3">
+      <h3 class="text-light shadow text-center rounded p-2 col-11" style="font-family: 'Almarai', sans-serif;background-color: rgb(7,0,122);">أراء بعض الزبناء</h3>
+    </div>
+
+<!-- scroll -->
+<div class="card-container col-12">
+  <div class="card col-4">
+    <img src="converexemple/converexemple1.jpg"class="rounded"  alt="First slide">
+  </div>
+  <div class="card col-4">
+    <img src="converexemple/converexemple2.jpg"class="rounded" alt="Second slide">
+  </div>
+  <div class="card col-4">
+    <img src="converexemple/converexemple3.jpg"class="rounded" alt="Third slide">
+  </div>
+  <div class="card col-4">
+    <img src="converexemple/converexemple3.jpg"class="rounded" alt="Third slide">
+  </div>
+</div>
+
+
+  <section class="container my-3  d-flex justify-content-center">
+    <img src="logo/coverFooter-01.jpg" id="img_footer" class="rounded">
+  </section>
+
+  <footer>
+      <!-- Copyright -->
+      <div class="text-center p-3" id="Copyright_theme" style="background-color: rgba(0, 0, 0, 0.2)">© 2023 Copyright:
+        <a class="text-primary" href="https://www.facebook.com/elghandori1?mibextid=ZbWKwL">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg>
+       MG-code
+        </a>
+      </div>
+ <!-- Copyright -->
+  </footer>
+  
+<!-- fin -->
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+    <script src="back.js"></script>
+</body>
+
+</html>
