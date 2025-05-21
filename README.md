@@ -23,7 +23,7 @@ Overall, this product is an effective and innovative landing page for a washing 
 
 ## social media :
 - facebook page : MG-code
-- LinkedIn : MOHAMMED ELGHANDORI
+- LinkedIn : Mohammed Elghandori
 
 ## website experience link : 
-[Math Multiplication Game](https://machainealaver.netlify.app/?fbclid=IwAR3LKTSbA997ASB4I0rL3VoBUPIS-LTVB2bRwPzU3U4N4JdQCGFZHyFOl_c) website experience
+[washing machine product](https://machainealaver.netlify.app/?fbclid=IwAR3LKTSbA997ASB4I0rL3VoBUPIS-LTVB2bRwPzU3U4N4JdQCGFZHyFOl_c) website experience
